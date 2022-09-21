@@ -2,7 +2,7 @@
 useHead({
   title: 'Hongbusi',
   meta: [
-    { name: 'description', content: 'A template to quickly create a vue project.' }
+    { name: 'description', content: 'Hongbusi\'s Portfolio.' }
   ]
 })
 </script>
