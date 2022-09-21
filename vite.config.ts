@@ -6,8 +6,11 @@ import Unocss from 'unocss/vite'
 import Pages from 'vite-plugin-pages'
 import matter from 'gray-matter'
 import Markdown from 'vite-plugin-vue-markdown'
+import anchor from 'markdown-it-anchor'
+import LinkAttributes from 'markdown-it-link-attributes'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import { slugify } from './scripts/slugify'
 
 export default defineConfig({
   resolve: {
@@ -36,7 +39,26 @@ export default defineConfig({
     }),
 
     Markdown({
-      // wrapperComponent: 'post'
+      wrapperComponent: 'post',
+      wrapperClasses: 'prose',
+      headEnabled: true,
+      markdownItSetup(md) {
+        md.use(anchor, {
+          slugify,
+          permalink: anchor.permalink.linkInsideHeader({
+            symbol: '#',
+            renderAttrs: () => ({ 'aria-hidden': 'true' })
+          })
+        })
+
+        md.use(LinkAttributes, {
+          matcher: (link: string) => /^https?:\/\//.test(link),
+          attrs: {
+            target: '_blank',
+            rel: 'noopener'
+          }
+        })
+      }
     }),
 
     AutoImport({
