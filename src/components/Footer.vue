@@ -12,7 +12,7 @@ import { isDark, toggleDark } from '~/composables'
       </Icon>
     </button>
 
-    <a class="mx-2" rel="noreferrer" href="https://github.com/Hongbusi/starter-vue" target="_blank" title="GitHub">
+    <a class="mx-2" rel="noreferrer" href="https://github.com/Hongbusi/Hongbusi" target="_blank" title="GitHub">
       <Icon>
         <Github />
       </Icon>

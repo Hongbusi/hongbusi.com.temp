@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'starter-vue',
+  title: 'Hongbusi',
   meta: [
     { name: 'description', content: 'A template to quickly create a vue project.' }
   ]
