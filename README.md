@@ -1,6 +1,6 @@
-**[Hongbusi](https://hongbusi.com)**
+# Hongbusi
 
-My personal powered by [Vite](https://vitejs.dev).
+My personal [website](https://hongbusi.com) powered by [Vite](https://vitejs.dev).
 
 ## License
 
