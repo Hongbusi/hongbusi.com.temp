@@ -4,8 +4,8 @@ import App from './App.vue'
 import routes from '~pages'
 
 import '@unocss/reset/tailwind.css'
-import './styles/main.css'
 import 'uno.css'
+import './styles/main.css'
 
 const scrollBehavior = (to: any, from: any, savedPosition: any) => {
   if (savedPosition)
