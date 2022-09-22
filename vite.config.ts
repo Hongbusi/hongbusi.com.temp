@@ -4,6 +4,7 @@ import fs from 'fs-extra'
 import vue from '@vitejs/plugin-vue'
 import Unocss from 'unocss/vite'
 import Pages from 'vite-plugin-pages'
+import Layouts from 'vite-plugin-vue-layouts'
 import matter from 'gray-matter'
 import Markdown from 'vite-plugin-vue-markdown'
 import anchor from 'markdown-it-anchor'
@@ -37,6 +38,8 @@ export default defineConfig({
         route.meta = Object.assign(route.meta || {}, { frontmatter: data })
       }
     }),
+
+    Layouts(),
 
     Markdown({
       wrapperComponent: 'post',
