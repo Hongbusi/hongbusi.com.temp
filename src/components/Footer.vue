@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Github, Moon, Sunny } from '@hongbusi/icons-vue'
-import { isDark, toggleDark } from '~/composables'
+import { isDark, toggleDark } from '~/composables/dark'
 </script>
 
 <template>
