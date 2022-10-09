@@ -4,8 +4,9 @@ specifiers:
   '@commitlint/cli': ^17.1.2
   '@commitlint/config-conventional': ^17.1.0
   '@hongbusi/eslint-config': ^0.3.4
-  '@hongbusi/icons-vue': ^0.0.5
+  '@hongbusi/icons-svg': ^0.0.5
   '@hongbusi/markdown-css': ^0.0.3
+  '@iconify/utils': ^2.0.1
   '@types/diacritics': ^1.3.1
   '@types/fs-extra': ^9.0.13
   '@types/markdown-it': ^12.2.3
@@ -41,7 +42,7 @@ specifiers:
   vue-tsc: ^0.40.13
 
 dependencies:
-  '@hongbusi/icons-vue': 0.0.5_vue@3.2.39
+  '@hongbusi/icons-svg': 0.0.5
   '@hongbusi/markdown-css': 0.0.3
   '@unocss/reset': 0.45.22
   '@vueuse/core': 9.1.0_vue@3.2.39
@@ -54,6 +55,7 @@ devDependencies:
   '@commitlint/cli': 17.1.2
   '@commitlint/config-conventional': 17.1.0
   '@hongbusi/eslint-config': 0.3.4_irgkl5vooow2ydyo6aokmferha
+  '@iconify/utils': 2.0.1
   '@types/diacritics': 1.3.1
   '@types/fs-extra': 9.0.13
   '@types/markdown-it': 12.2.3
@@ -449,12 +451,8 @@ packages:
       - typescript
     dev: true
 
-  /@hongbusi/icons-vue/0.0.5_vue@3.2.39:
-    resolution: {integrity: sha512-68h3gO142a9zmEGAKommj7VLPTxuM3czD2VBUVqkXeKF91jKqy8hUNFjrcOshMOQfMUyzFeP8YXVOmiJL9Hiyw==}
-    peerDependencies:
-      vue: ^3.2.0
-    dependencies:
-      vue: 3.2.39
+  /@hongbusi/icons-svg/0.0.5:
+    resolution: {integrity: sha512-6G30xsbRJz4a+KaGo7Dm3tZWmk7KnIE2/Q/0Ngt4XKdUozYfrcPxNsKa/lbbtnvJ4Vm54yToDpLbyjfvwg+9QA==}
     dev: false
 
   /@hongbusi/markdown-css/0.0.3:
@@ -489,8 +487,8 @@ packages:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
 
-  /@iconify/utils/2.0.0:
-    resolution: {integrity: sha512-thvwZ6m3frWJiOYwRdHPSPGC25rmyvDl0vXdQ8ocRJZx31m8Pn4y7V1mTc5UReR6MiAj+hrV2UPZQjx7zI960g==}
+  /@iconify/utils/2.0.1:
+    resolution: {integrity: sha512-t8IyICk25wgZL4YKn/2kYfjG5MGA6EWZlaUJZ1OEIku4V+kX9V900T5E4HIqS3hLyD6/RJET0zY4vxO9pHLHHw==}
     dependencies:
       '@antfu/install-pkg': 0.1.0
       '@antfu/utils': 0.5.2
@@ -882,7 +880,7 @@ packages:
   /@unocss/preset-icons/0.45.22:
     resolution: {integrity: sha512-xIURFFbzBzr0XwWEXNbiuNbnBDlgkMnwjWm8c7ZIhhI5dgVMMNDDLQlGs6IbwWnnZBlv3x0ftUghGHQimnjfPw==}
     dependencies:
-      '@iconify/utils': 2.0.0
+      '@iconify/utils': 2.0.1
       '@unocss/core': 0.45.22
       ohmyfetch: 0.4.18
     transitivePeerDependencies:

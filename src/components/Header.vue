@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Github, Moon, Sunny } from '@hongbusi/icons-vue'
 import { isDark, toggleDark } from '~/composables/dark'
 </script>
 
@@ -12,16 +11,12 @@ import { isDark, toggleDark } from '~/composables/dark'
       </div>
       <div class="text-xl">
         <button class="mx-2 !outline-none" title="切换深色模式" @click="toggleDark()">
-          <Icon>
-            <Moon v-if="isDark" />
-            <Sunny v-else />
-          </Icon>
+          <div v-if="isDark" class="i-hbs-moon" />
+          <div v-else class="i-hbs-sunny" />
         </button>
 
         <a class="mx-2" rel="noreferrer" href="https://github.com/Hongbusi/Hongbusi" target="_blank" title="GitHub">
-          <Icon>
-            <Github />
-          </Icon>
+          <div class="i-hbs-github" />
         </a>
       </div>
     </div>
