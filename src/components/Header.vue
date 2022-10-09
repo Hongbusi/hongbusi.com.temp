@@ -15,7 +15,7 @@ import { isDark, toggleDark } from '~/composables/dark'
           <div v-else class="i-hbs-sunny" />
         </button>
 
-        <a class="mx-2" rel="noreferrer" href="https://github.com/Hongbusi/Hongbusi" target="_blank" title="GitHub">
+        <a class="mx-2" rel="noreferrer" href="https://github.com/Hongbusi" target="_blank" title="GitHub">
           <div class="i-hbs-github" />
         </a>
       </div>
