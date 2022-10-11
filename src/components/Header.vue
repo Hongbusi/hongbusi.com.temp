@@ -10,9 +10,11 @@ const { y } = useWindowScroll()
     :class="{ '-translate-y-full': y >= 50 }"
   >
     <nav class="flex justify-between items-center px-4 py-2 mx-auto container">
-      <div>
-        <img v-if="isDark" src="/logo-dark.svg" class="h-44px" alt="logo">
-        <img v-else src="/logo.svg" class="h-44px" alt="logo">
+      <div class="flex items-center space-x-2">
+        <div class="w-40px h-40px bg-black" />
+        <h1 class="text-2xl">
+          Hongbusi
+        </h1>
       </div>
 
       <div class="text-xl">
